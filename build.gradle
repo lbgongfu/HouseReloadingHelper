@@ -19,6 +19,8 @@ allprojects {
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.6.0'
         aiVersion = '1.6.0'
+        hibernateVersion = '5.0.2.Final'
+        mysqlVersion = '5.1.37'
     }
 
     repositories {
@@ -47,6 +49,8 @@ project(":core") {
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        compile "org.hibernate:hibernate-entitymanager:$hibernateVersion"
+        compile "mysql:mysql-connector-java:$mysqlVersion"
     }
 }
 
